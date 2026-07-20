@@ -68,7 +68,8 @@
     .vault-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
     .vault-slot { background: #171a13; border: 1px solid #2a2c24; border-top: 2px solid var(--bronze-dim); overflow: hidden; transition: border-color 0.2s, transform 0.2s; }
     .vault-slot:hover { border-color: var(--bronze); transform: translateY(-2px); }
-    .vault-slot img.cover { width: 100%; height: 200px; object-fit: cover; filter: grayscale(0.15) contrast(1.05); transition: filter 0.3s; }
+    .vault-slot img.cover { width: 100%; height: 200px; object-fit: cover; object-position: center 20%; filter: grayscale(0.15) contrast(1.05); transition: filter 0.3s; }
+    .vault-slot img.cover.crop-top { object-position: center 5%; }
     .vault-slot:hover img.cover { filter: grayscale(0) contrast(1.05); }
     .vault-label { padding: 14px 16px; font-size: 0.6rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--titan-dim); line-height: 1.6; }
     .vault-label strong { display: block; color: var(--cream-dim); font-size: 0.68rem; margin-bottom: 3px; }
@@ -144,22 +145,23 @@
   <table class="releases-tbl">
     <thead><tr><th>Title</th><th>Year</th><th>Format</th><th>Availability</th></tr></thead>
     <tbody>
-      <tr><td>Backpack Gangsta Rap Vol. 5 <span class="era-badge">Current</span></td><td>2026</td><td>Project</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/artist/4Sz0vntKPbDUjbZPVgGRgb" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/us/artist/skytzmatic/1896565178" class="tbl-link" target="_blank">Apple Music</a> &nbsp;·&nbsp; <a href="https://skytzmatic.bandcamp.com" class="tbl-link" target="_blank">Bandcamp</a></td></tr>
-      <tr><td>World / Endless <span class="era-badge">Suite I</span></td><td>2026</td><td>Single</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/2xtbZ9cpgGZS1QFDsSK0jX" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6780188410" class="tbl-link" target="_blank">Apple Music</a></td></tr>
-      <tr><td>Start Up / Merciless <span class="era-badge">Suite II</span></td><td>2026</td><td>Single</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/4JCBA8c13kxpYRTc7fmCJs" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6779444291" class="tbl-link" target="_blank">Apple Music</a></td></tr>
-      <tr><td>Backpack Gangsta Rap Vol. 4</td><td>2014</td><td>Album</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6772685440" class="tbl-link" target="_blank">Apple Music</a></td></tr>
-      <tr><td>Backpack Gangsta Rap Vol. 3</td><td>2011</td><td>Album</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/6JwABsqFtqVzGMUm1D3thr" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6771307483" class="tbl-link" target="_blank">Apple Music</a></td></tr>
-      <tr><td>The Year of Enlightenment</td><td>2011</td><td>Album</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/6TnaqM0njoUm1HEo8hO3WQ" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6771658549" class="tbl-link" target="_blank">Apple Music</a></td></tr>
+      <tr><td>Backpack Gangsta Rap Vol. 5 <span class="era-badge">Current</span></td><td>2026</td><td>Project</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://soundcloud.com/skytzmatic562" class="tbl-link" target="_blank">SoundCloud</a> &nbsp;·&nbsp; <a href="https://skytzmatic.bandcamp.com/album/backpack-gangsta-rap-vol-5-first-wave" class="tbl-link" target="_blank">First Wave</a></td></tr>
+      <tr><td>World / Endless <span class="era-badge">Suite I</span></td><td>2026</td><td>Single</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/2xtbZ9cpgGZS1QFDsSK0jX" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6780188410" class="tbl-link" target="_blank">Apple Music</a> &nbsp;·&nbsp; <a href="https://skytzmatic.bandcamp.com/album/payday-loans" class="tbl-link" target="_blank">Bandcamp</a></td></tr>
+      <tr><td>Start Up / Merciless <span class="era-badge">Suite II</span></td><td>2026</td><td>Single</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/4JCBA8c13kxpYRTc7fmCJs" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6779444291" class="tbl-link" target="_blank">Apple Music</a> &nbsp;·&nbsp; <a href="https://skytzmatic.bandcamp.com/album/payday-loans" class="tbl-link" target="_blank">Bandcamp</a></td></tr>
+      <tr><td>Soul Caliber</td><td>2026</td><td>Single</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/2H8ZZEczUq3hbjroTGNBAn" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/us/album/soul-caliber-single/6789613043" class="tbl-link" target="_blank">Apple Music</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/watch?v=6g_iSUL_hBk" class="tbl-link" target="_blank">YouTube</a> &nbsp;·&nbsp; <a href="https://skytzmatic.bandcamp.com/track/soul-caliber" class="tbl-link" target="_blank">Bandcamp</a></td></tr>
+      <tr><td>Backpack Gangsta Rap Vol. 4</td><td>2014</td><td>Album</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/0FrUfu0ODyPE14PxzQUf1Y" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6772685440" class="tbl-link" target="_blank">Apple Music</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/watch?v=WwgWxM55258&list=OLAK5uy_nYj_HhOZsIQKTjzyGbpMheALJvSNV7-Ds" class="tbl-link" target="_blank">YouTube</a></td></tr>
+      <tr><td>Backpack Gangsta Rap Vol. 3</td><td>2011</td><td>Album</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/6JwABsqFtqVzGMUm1D3thr" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6771307483" class="tbl-link" target="_blank">Apple Music</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/watch?v=ie8Gl5YhZqY&list=OLAK5uy_nC7VBY3MyiEvmEudPUEmouABCN4oztxVI" class="tbl-link" target="_blank">YouTube</a></td></tr>
+      <tr><td>The Year of Enlightenment</td><td>2011</td><td>Album</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/6TnaqM0njoUm1HEo8hO3WQ" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6771658549" class="tbl-link" target="_blank">Apple Music</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/watch?v=xLtThG_kI_c&list=OLAK5uy_m22LDGXUq1WhDjq6RJLavkDoPXU6MGAUA" class="tbl-link" target="_blank">YouTube</a></td></tr>
       <tr><td>Backpack Gangsta Rap Vol. 2</td><td>2010</td><td>Album</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; Bandcamp / SoundCloud</td></tr>
       <tr><td>Backpack Gangsta Rap Vol. 1</td><td>2009</td><td>Album</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; Bandcamp / SoundCloud</td></tr>
-      <tr><td>Smashing for the Cause (S.F.T.C.)</td><td>2006</td><td>EP</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/3hwvvgtufLn3fBpehiismR" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6772382786" class="tbl-link" target="_blank">Apple Music</a></td></tr>
-      <tr><td>Life In The Fast Lane</td><td>2005</td><td>Album</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/7p6UrhmQV0RTT63n0oO7h8" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6774412915" class="tbl-link" target="_blank">Apple Music</a></td></tr>
-      <tr><td>Microphone Dreams EP</td><td>2005</td><td>EP</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/6pURR44duiCCRCzLday7Bi" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6768539532" class="tbl-link" target="_blank">Apple Music</a></td></tr>
-      <tr><td>Prophetic Poets — Life As We See It // Chapter One: The Movement</td><td>2004</td><td>Album</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6772673206" class="tbl-link" target="_blank">Apple Music</a> &nbsp;·&nbsp; 20 tracks</td></tr>
+      <tr><td>Smashing for the Cause (S.F.T.C.)</td><td>2006</td><td>EP</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/3hwvvgtufLn3fBpehiismR" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6772382786" class="tbl-link" target="_blank">Apple Music</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/watch?v=IFO6XztCJwM&list=OLAK5uy_l7fDS4x2_TNAg7TzsvF2AZkhL94hC0Rw0" class="tbl-link" target="_blank">YouTube</a></td></tr>
+      <tr><td>Life In The Fast Lane</td><td>2005</td><td>Album</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/7p6UrhmQV0RTT63n0oO7h8" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6774412915" class="tbl-link" target="_blank">Apple Music</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/watch?v=pQqGXOPfys0&list=OLAK5uy_k-TS6kC68KpZ4G3by9VUjOcagaYTD6iUk" class="tbl-link" target="_blank">YouTube</a></td></tr>
+      <tr><td>Microphone Dreams EP</td><td>2005</td><td>EP</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/6pURR44duiCCRCzLday7Bi" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6768539532" class="tbl-link" target="_blank">Apple Music</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/watch?v=knIOjum1ndY&list=OLAK5uy_mta8885L2BYH2c4WDKu3amKp2y9_FZXhQ" class="tbl-link" target="_blank">YouTube</a></td></tr>
+      <tr><td>Prophetic Poets — Life As We See It // Chapter One: The Movement</td><td>2004</td><td>Album</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/05gJB5Pm9r4Zkprk3nP4ic" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6772673206" class="tbl-link" target="_blank">Apple Music</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/watch?v=J0_Jy_zmDqg&list=OLAK5uy_lNuC_UnnMFK2smfysAg7joQ7gm3TXmjdA" class="tbl-link" target="_blank">YouTube</a> &nbsp;·&nbsp; 20 tracks</td></tr>
       <tr><td>Knights of the Old Republic</td><td>2004</td><td>Mixtape</td><td><span class="status-pending">Indexing</span></td></tr>
-      <tr><td>Microphone Dreams: The Prequel</td><td>2003</td><td>Album</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/2uX9GkHhOIYB6gLa9iac1e" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6770861580" class="tbl-link" target="_blank">Apple Music</a></td></tr>
+      <tr><td>Microphone Dreams: The Prequel</td><td>2003</td><td>Album</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/2uX9GkHhOIYB6gLa9iac1e" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://music.apple.com/album/6770861580" class="tbl-link" target="_blank">Apple Music</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/watch?v=95QfcZ2mvIY&list=OLAK5uy_m6aVR_8zSEVvjQyO1xd0iIQJHzgreKup0" class="tbl-link" target="_blank">YouTube</a></td></tr>
       <tr><td>Microphone Dreams LP <span class="era-badge">Unreleased</span></td><td>2008</td><td>Album</td><td><span class="status-pending">Physical only</span> &nbsp;·&nbsp; Recorded Rota, Cadiz, Spain &nbsp;·&nbsp; Feat. Ruste Juxx</td></tr>
-      <tr><td>Society of the Spectacle <span class="era-badge">John Maetrikz</span></td><td>Jan 6, 2019</td><td>Album</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/30cFdOLVYqC51OtakJN2nV" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; 19 tracks</td></tr>
+      <tr><td>Society of the Spectacle <span class="era-badge">John Maetrikz</span></td><td>Jan 6, 2019</td><td>Album</td><td><span class="status-live">Live</span> &nbsp;·&nbsp; <a href="https://open.spotify.com/album/30cFdOLVYqC51OtakJN2nV" class="tbl-link" target="_blank">Spotify</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/watch?v=rVMZO7zV1c0&list=OLAK5uy_kynuYcBtFDfp2QUoZTNEATRSD-AotACDM" class="tbl-link" target="_blank">YouTube</a> &nbsp;·&nbsp; 19 tracks</td></tr>
       <tr><td>Demi-D — Only Footprints <span class="era-badge">Feature</span></td><td>TBD</td><td>Album</td><td>Track 20 — ILLEST feat. Skytzmatic &nbsp;·&nbsp; Korean hip hop</td></tr>
     </tbody>
   </table>
@@ -224,15 +226,16 @@
 
   <div class="era-label">Mission Resumed Era — 2026</div>
   <div class="vault-grid">
-    <div class="vault-slot"><img src="World:Endless.jpg" alt="World Endless" class="cover"><div class="vault-label"><strong>World / Endless</strong>Vol. 5 Suite I &nbsp;·&nbsp; June 15, 2026</div></div>
-    <div class="vault-slot"><img src="Start Up:Merciless.jpg" alt="Start Up Merciless" class="cover"><div class="vault-label"><strong>Start Up / Merciless</strong>Vol. 5 Suite II &nbsp;·&nbsp; June 15, 2026</div></div>
-    <div class="vault-slot"><img src="Painted Picture.png" alt="Painted Picture" class="cover"><div class="vault-label"><strong>Painted Picture</strong>Flagship single</div></div>
-    <div class="vault-slot"><img src="Payday Loan.png" alt="Payday Loan" class="cover"><div class="vault-label"><strong>Payday Loan</strong>Vol. 5 album cover</div></div>
+    <div class="vault-slot"><img src="World_Endless.jpg" alt="World Endless" class="cover"><div class="vault-label"><strong>World / Endless</strong>Vol. 5 Suite I &nbsp;·&nbsp; June 15, 2026</div></div>
+    <div class="vault-slot"><img src="Start_Up_Merciless.jpg" alt="Start Up Merciless" class="cover"><div class="vault-label"><strong>Start Up / Merciless</strong>Vol. 5 Suite II &nbsp;·&nbsp; June 15, 2026</div></div>
+    <div class="vault-slot"><img src="Painted_Picture.png" alt="Painted Picture" class="cover"><div class="vault-label"><strong>Painted Picture</strong>Flagship single</div></div>
+    <div class="vault-slot"><img src="Payday_Loan.png" alt="Payday Loan" class="cover"><div class="vault-label"><strong>Payday Loan</strong>Vol. 5 album cover</div></div>
     <div class="vault-slot"><img src="TT2.png" alt="Titanium Turnbuckle Two" class="cover"><div class="vault-label"><strong>Titanium Turnbuckle Two</strong>Single cover</div></div>
     <div class="vault-slot"><img src="logo.jpg" alt="Skytzmatic Crest" class="cover"><div class="vault-label"><strong>Institutional Seal — 2026</strong>Wolf / medals / vinyl / doctrine</div></div>
     <div class="vault-slot"><img src="1.jpg" alt="ReverbNation Ranking" class="cover"><div class="vault-label"><strong>ReverbNation — #3 Long Beach</strong>Hip Hop ranking — organic — June 2026</div></div>
     <div class="vault-slot pending"><img src="wolf.jpg" alt="" class="pending-wolf"><div class="pending-label"><strong>Archive Asset — Pending Recovery</strong>Dilemaradio Feature Page Screenshot</div></div>
-    <div class="vault-slot pending"><img src="wolf.jpg" alt="" class="pending-wolf"><div class="pending-label"><strong>Archive Asset — Pending Recovery</strong>Spotify for Artists — 268 Monthly Listeners</div></div>
+    <div class="vault-slot pending"><img src="wolf.jpg" alt="" class="pending-wolf"><div class="pending-label"><strong>Spotify for Artists — Current Stats</strong>738 Listeners &nbsp;·&nbsp; 22 Monthly Active &nbsp;·&nbsp; 1.5K Streams &nbsp;·&nbsp; 206 Saves &nbsp;·&nbsp; 9 Followers &nbsp;(12-mo, screenshot upload pending)</div></div>
+    <div class="vault-slot pending"><img src="wolf.jpg" alt="" class="pending-wolf"><div class="pending-label"><strong>Apple Music for Artists — Current Stats</strong>1.8K Plays &nbsp;·&nbsp; 166 Shazams &nbsp;·&nbsp; 24 Radio Spins &nbsp;·&nbsp; 2 Purchases &nbsp;(Lifetime, screenshot upload pending)</div></div>
   </div>
 
   <div class="era-label">Long Beach Era — 2009–2014</div>
@@ -245,8 +248,8 @@
     <div class="vault-slot wide"><img src="_MG_4263.jpg" alt="Live" class="cover"><div class="vault-label"><strong>Live Performance — King Ryan Events</strong>Photo: SHGfoto &nbsp;·&nbsp; LOM shirt — stage lighting</div></div>
     <div class="vault-slot wide"><img src="_MG_4284.jpg" alt="Live" class="cover"><div class="vault-label"><strong>Live Performance — King Ryan Events</strong>Photo: SHGfoto &nbsp;·&nbsp; On mic — crowd</div></div>
     <div class="vault-slot wide"><img src="5027633678_bde6b169db_b.jpg" alt="Live Stage" class="cover"><div class="vault-label"><strong>Live Performance — Stage</strong>LOM shirt &nbsp;·&nbsp; Full performance</div></div>
-    <div class="vault-slot wide"><img src="131118790.a7y0YbtS._MG_4594.jpg" alt="Live" class="cover"><div class="vault-label"><strong>Live Performance — King Ryan Events</strong>Photo: Rick Garcia &nbsp;·&nbsp; Full crowd</div></div>
-    <div class="vault-slot wide"><img src="131118791.Urt9Wjql._MG_4595.jpg" alt="Live Back" class="cover"><div class="vault-label"><strong>Live Performance — King Ryan Events</strong>Photo: Rick Garcia &nbsp;·&nbsp; Back to crowd</div></div>
+    <div class="vault-slot wide"><img src="131118790.a7y0YbtS._MG_4594.jpg" alt="Live" class="cover crop-top"><div class="vault-label"><strong>Live Performance — King Ryan Events</strong>Photo: Rick Garcia &nbsp;·&nbsp; Full crowd</div></div>
+    <div class="vault-slot wide"><img src="131118791.Urt9Wjql._MG_4595.jpg" alt="Live Back" class="cover crop-top"><div class="vault-label"><strong>Live Performance — King Ryan Events</strong>Photo: Rick Garcia &nbsp;·&nbsp; Back to crowd</div></div>
     <div class="vault-slot wide"><img src="DSC_5461.jpg" alt="Live JD Starling" class="cover"><div class="vault-label"><strong>Live Performance — Professional</strong>Photo: JD Starling Photography</div></div>
     <div class="vault-slot wide"><img src="DSC_5478.jpg" alt="Live JD Starling BW" class="cover"><div class="vault-label"><strong>Live Performance — Black &amp; White</strong>Photo: JD Starling Photography</div></div>
     <div class="vault-slot"><img src="5027053645_1a53d6c3c0_b.jpg" alt="Press Interview" class="cover"><div class="vault-label"><strong>Press Interview — King Ryan Events</strong>Step-and-repeat &nbsp;·&nbsp; LOM dog tags</div></div>
@@ -254,7 +257,7 @@
     <div class="vault-slot"><img src="5027074415_91dacab0ce_b.jpg" alt="Red Carpet" class="cover"><div class="vault-label"><strong>Red Carpet — King Ryan Events</strong>Three LOM shirts</div></div>
     <div class="vault-slot"><img src="showflyer.jpg" alt="Show Flyer" class="cover"><div class="vault-label"><strong>Show Flyer — Whiskey A-Go-Go</strong>July 16 &nbsp;·&nbsp; 8901 W Sunset Blvd, Los Angeles</div></div>
     <div class="vault-slot"><img src="17969_103576023000375_100000439340488_94063_3245079_n.jpg" alt="Merch Table" class="cover"><div class="vault-label"><strong>Physical Era — Merch Operations</strong>LOM shirts / CDs / Business cards — show table</div></div>
-    <div class="vault-slot"><img src="157476376.jpg" alt="LOM Stage" class="cover"><div class="vault-label"><strong>LOM Crew — Live Performance</strong>Full Loyalty Over Money shirts</div></div>
+    <div class="vault-slot"><img src="157476376.jpg" alt="Stepchild and Skytzmatic" class="cover"><div class="vault-label"><strong>Stepchild (WMD) &amp; Skytzmatic</strong>McChord AFB, WA &nbsp;·&nbsp; WMD Crew</div></div>
     <div class="vault-slot"><img src="17969_103576039667040_100000439340488_94067_8001990_n.jpg" alt="LOM Show" class="cover"><div class="vault-label"><strong>LOM Crew — Show Night</strong>Full LOM shirts — Long Beach era</div></div>
     <div class="vault-slot"><img src="DSC00910.JPG" alt="Cashmere Agency" class="cover"><div class="vault-label"><strong>Cashmere Agency — Industry Access</strong>Snoop Dogg platinum plaque — Capitol / Priority Records</div></div>
     <div class="vault-slot"><img src="photo-6.jpg" alt="Stage" class="cover"><div class="vault-label"><strong>Pre-Show — Empty Stage</strong>LA cap — tattoo sleeve</div></div>
@@ -269,12 +272,34 @@
   </div>
 
   <div class="era-label">Guest Features &amp; Collaborations</div>
-  <!-- PUNCH LIST — PHOTOS NEEDING MANUAL CROP/ADJUSTMENT (Operator flagged, June 30, 2026):
+  <!-- PUNCH LIST — PHOTOS NEEDING MANUAL CROP/ADJUSTMENT (Operator flagged, June 30, 2026 + July 19-20, 2026):
        1. Red Carpet — King Ryan Events (17969_103576023000375...) — three LOM shirts photo needs adjustment
        2. Show Flyer — Whiskey A-Go-Go (showflyer.jpg) — needs adjustment, text getting cut off
-       3. LOM Crew — Live Performance (full LOM shirts photo) — needs adjustment
-       4. Long Beach Street — LOM Shirt skateboard pic (DSC_3395.jpg) — needs crop to show shirt AND skateboard
-       These require re-uploading higher-res or re-cropped source files — cannot be fixed via code alone. -->
+       3. Long Beach Street — LOM Shirt skateboard pic (DSC_3395.jpg) — needs crop to show shirt AND skateboard
+       4. Rick Garcia King Ryan Events photos — object-position adjusted to crop-top class (July 19-20 fix applied), verify visually
+       These require re-uploading higher-res or re-cropped source files — cannot be fully fixed via code alone.
+
+       PENDING PHOTO UPLOADS (July 19-20, 2026 session — awaiting file upload to repo):
+       - Skytz & Ced-G, Spain (new replacement photo, palm tree/balcony) — file ready as skytz-cedg-spain.jpeg, not yet uploaded (300KB, too large for this pass)
+       - Sunset Block — additional photo (purple/gold LOM shirts, chain) — ADD alongside DSC00921.JPG, do not replace
+       - Whiskey-A-Go-Go backstage group photo (4 men)
+       - Whiskey-A-Go-Go on-stage performance photo
+       - Skytzmatic & Ras Kass
+       - Skytzmatic & Warren G (possible tie-in to "First Weekend Out the Military" entry — needs confirmation)
+       - Skytzmatic & Ced-G, Prophetic Poets era (matching caps photo)
+       - Skytzmatic & Ruste Juxx — caption/era conflict flagged, needs resolution before posting (conflicts with "First Weekend Out the Military" Warren G/Big Boy story)
+       - Skytzmatic learning Mixing/Mastering at Musicians Institute — era/year unknown, needs placement
+       - Loyalty Over Money in Spain (group photo, bar/lounge) x2
+       - Skytzmatic & Trizz — red carpet event
+       - Skytzmatic backstage at show
+       - Skytzmatic freestyling in the crowd (B&W)
+       - Skytzmatic on stage spitting
+       - Skytzmatic & Trizz — rocking stage together (King Ryan Events, SHGfoto)
+       - Skytzmatic & Son of Soul making beats, Spain
+       - Skytzmatic & G-Babe (Block Royale, Spanish rapper) x2
+       - LOM // Iraq Combat Veteran marketing flat-lay (firearms + branded gear) — brand tone confirmation needed before placement
+       - Skytzmatic radio interview, Underground LBC Radio — ties to "KLBC Interview Snippet" track credit
+  -->
   <div class="vault-grid">
     <div class="vault-slot"><img src="only_footprintz_front_cover.jpg" alt="Demi-D Only Footprints" class="cover"><div class="vault-label"><strong>Demi-D — Only Footprints</strong>Track 20 — ILLEST feat. Skytzmatic &nbsp;·&nbsp; Korean hip hop &nbsp;·&nbsp; International feature</div></div>
     <div class="vault-slot"><img src="Equalityfinal.jpg" alt="Tracklist" class="cover"><div class="vault-label"><strong>Only Footprints — Full Tracklist</strong>21 tracks — bilingual Korean / English &nbsp;·&nbsp; feat. Skytzmatic on Track 20</div></div>
@@ -282,8 +307,8 @@
 
   <div class="era-label">Prophetic Poets Era</div>
   <div class="vault-grid">
-    <div class="vault-slot"><img src="Prophetic Poets.jpg" alt="Prophetic Poets" class="cover"><div class="vault-label"><strong>Prophetic Poets — Life As We See It</strong>Original album cover art &nbsp;·&nbsp; 2004</div></div>
-    <div class="vault-slot memorial"><img src="SKytzCegG copy.jpeg" alt="Skytz and Ced-G" class="cover"><div class="vault-label"><strong>Skytz &amp; Ced-G — Studio Session</strong>Prophetic Poets &nbsp;·&nbsp; Pan-African flag<span class="memorial-tag">In Memoriam — Ced-G &nbsp;·&nbsp; May 4, 1982 – June 16, 2026</span></div></div>
+    <div class="vault-slot"><img src="Prophetic_Poets.jpg" alt="Prophetic Poets" class="cover"><div class="vault-label"><strong>Prophetic Poets — Life As We See It</strong>Original album cover art &nbsp;·&nbsp; 2004</div></div>
+    <div class="vault-slot memorial"><img src="Skytz_CedG.jpeg" alt="Skytz and Ced-G" class="cover"><div class="vault-label"><strong>Skytz &amp; Ced-G — Studio Session</strong>Prophetic Poets &nbsp;·&nbsp; Pan-African flag<span class="memorial-tag">In Memoriam — Ced-G &nbsp;·&nbsp; May 4, 1982 – June 16, 2026</span></div></div>
     <div class="vault-slot"><img src="DSC00921.JPG" alt="Crew Session" class="cover"><div class="vault-label"><strong>Sunset Block — First Days Back</strong>Homies from the block &nbsp;·&nbsp; Long Beach &nbsp;·&nbsp; Post-military return</div></div>
     <div class="vault-slot"><img src="157476363.jpg" alt="WMD Stepchild" class="cover"><div class="vault-label"><strong>Skytz &amp; Stepchild — WMD</strong>McChord AFB &nbsp;·&nbsp; USAF Punishers</div></div>
     <div class="vault-slot"><img src="38500_411682471745_700596745_5058137_3682446_n.jpg" alt="WMD Crew" class="cover"><div class="vault-label"><strong>WMD Era — Full Crew</strong>Night &nbsp;·&nbsp; McChord AFB &nbsp;·&nbsp; USAF Punishers</div></div>
@@ -291,7 +316,7 @@
 
   <div class="era-label">USAF Era — Iraq &amp; Spain — 2003–2008</div>
   <div class="vault-grid">
-    <div class="vault-slot memorial"><img src="SKytzCegG copy.jpeg" alt="Skytz and Ced-G Spain" class="cover"><div class="vault-label"><strong>Skytz &amp; Ced-G — Rota, Cadiz, Spain</strong>Microphone Dreams LP recording period &nbsp;·&nbsp; 2007–08<span class="memorial-tag">In Memoriam — Ced-G &nbsp;·&nbsp; May 4, 1982 – June 16, 2026</span></div></div>
+    <div class="vault-slot memorial"><img src="Skytz_CedG_Spain.jpg" alt="Skytz and Ced-G Spain" class="cover"><div class="vault-label"><strong>Skytz &amp; Ced-G — Rota, Cadiz, Spain</strong>Microphone Dreams LP recording period &nbsp;·&nbsp; 2007–08<span class="memorial-tag">In Memoriam — Ced-G &nbsp;·&nbsp; May 4, 1982 – June 16, 2026</span></div></div>
     <div class="vault-slot pending"><img src="wolf.jpg" alt="" class="pending-wolf"><div class="pending-label"><strong>Archive Asset — Pending Recovery</strong>Additional Spain Photographs — Skytz &amp; Ced-G</div></div>
     <div class="vault-slot"><img src="Microphone_Dreams_LP.jpg" alt="Microphone Dreams LP" class="cover"><div class="vault-label"><strong>Microphone Dreams LP — Cover Art</strong>Santa Studios, Rota, Cadiz, Spain &nbsp;·&nbsp; 2008 &nbsp;·&nbsp; Feat. Ruste Juxx &nbsp;·&nbsp; Unreleased digitally</div></div>
     <div class="vault-slot"><img src="cd cover 2.jpg" alt="Microphone Dreams EP" class="cover"><div class="vault-label"><strong>Microphone Dreams EP — Promo Sheet</strong>Full tracklist &nbsp;·&nbsp; USAF era &nbsp;·&nbsp; 2005</div></div>
